@@ -45,8 +45,8 @@ p {
 
 .bg-cover {
   position: absolute;
+  background: url("./adamsgucianos17.webp");
   background-size: cover;
-  background-image: url("image\backgroud.png");
   background-repeat: no-repeat;
   top: 0;
   right: 0;
