@@ -196,6 +196,16 @@ p {
 .fa-linkedin {
   color: #007bb5;
 }
+
+.fa-instagram {
+  color: #e1306c;
+
+}
+
+.fa-github {
+  color: black;
+}
+
 @media (min-width: 768px) {
   .md\:bg-left {
       background-position: left;
