@@ -63,7 +63,8 @@ p {
 .items-center {
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: 
+  
 }
 
 .justify-center {
