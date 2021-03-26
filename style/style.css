@@ -45,6 +45,7 @@ p {
 
 .bg-cover {
   position: absolute;
+  width: 70%;
   background: url("image/background.webp");
   background-size: cover;
   background-repeat: no-repeat;
