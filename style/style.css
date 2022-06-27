@@ -1,73 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  
 }
 
-html {
-  line-height: 1.5;
-  font-family: sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 10px;
 }
 
-.split-wrapper:after {
-  content: "";
-  display: table;
-  clear: both;
+p {
+  margin-bottom: 0.75em;
 }
 
-.left {
-  float: left;
-  width: 50%;
-  height: 100vh;
-  background-size: 75%, cover;
+section {
+  display: block;
+}
+
+.split-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+.split-wrapper .left {
+  width: 66.6667%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.image {
+  background-size: cover;
+  background-position: 27.4745% 47.7778%;
   background-repeat: no-repeat;
-  background-position: 120px;
+  padding-bottom: 98.8889%;
+  width: 899.344px;
 }
 
-.center {
-  padding: 120px;
+.split-wrapper .left .image {
+  background-color: #eee;
+  position: fixed;
+  width: inherit;
+  min-height: 100%;
+  padding-bottom: 0!important;
 }
 
-.center h2 {
-  font-family: 'Lato';
-  font-size: 5em;
-  line-height: 2em;
+.split-wrapper .name {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.7em;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 1em;
+  color: #333;
 }
 
-.center .name {
-  font-size: 2em;
-  font-weight: bold;
+.split-wrapper .headline{
+  display: inline-block;
+  font-family: 'Ubuntu', sans;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 0.5em;
 }
 
-.center p {
-  font-family: 'Montserrat';
-  font-size: 1.5em;
+.split-wrapper .headline .role {
+  display: inline-block;
+  text-transform: capitalize;
+  padding: 0 60px;
 }
 
-.social-media p {
-  line-height: normal;
-  font-weight: bold;
-  font-size: 1em;
-  padding-top: 30px;
+.split-wrapper .headline .location {
+  padding: 0 60px;
 }
 
-@media screen and (max-width: 600px) {
-  .left {
-    width: 100%;
-  }
+
+.split-wrapper .body {
+  padding: 0;
+  width: 33.3333%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+
+.split-wrapper .body .body-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+
+.split-wrapper .inset {
+  padding: 0 60px;
+  max-width: 520px;
+}
+
+
+.split-wrapper .bio {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-align: left;
+  word-wrap: break-word;
 }
 
 /*Social Media*/
+.social-media {
+  padding: 0 60px;
+  margin-top: 2.5em;
+}
+
+.social-media p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  word-wrap: break-word;
+}
+
 .fa {
-  padding: 20px;
+  padding: 15px;
   font-size: 35px;
   width: 30px;
   text-align: center;
   text-decoration: none;
-  margin: 1px 6px;
+  margin: 0 20px;
 }
 
 .fa:hover {
@@ -88,4 +153,9 @@ html {
 
 .fa-github {
   color: black;
+}
+@media only screen and (max-width: 801px) {
+  .split-wrapper {
+    display: block;
+  }
 }
